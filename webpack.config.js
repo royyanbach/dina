@@ -18,8 +18,8 @@ module.exports = {
     disableHostCheck: true,
     contentBase: './docs',
     host: '0.0.0.0',
-    hot: true,
-    port: 2019
+    // hot: true,
+    port: 5001
   },
   module: {
     rules: [
@@ -28,15 +28,15 @@ module.exports = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: !isProduction,
-            },
+            // options: {
+            //   hmr: !isProduction,
+            // },
           },
           'css-loader',
         ],
       },
       {
-        test: /\.(png|jpg|gif)$/i,
+        test: /\.(png|jpg|gif|webp)$/i,
         use: [
           {
             loader: 'url-loader',

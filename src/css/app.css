@@ -3,8 +3,9 @@
 .head {
   height: 100%;
   background: url('../img/head.jpg') no-repeat bottom center;
+  background: url('../img/head.webp') no-repeat bottom center;
   background-size: cover;
-  color: #fff;
+  color: rgba(255, 255, 255, .8);
 }
 
 .overlay {
@@ -22,11 +23,16 @@
   text-shadow: 1px 1px 2px rgba(0,0,0,.6);
 }
 
-.name {
+.hero .title {
   font-family: 'Great Vibes', Arial, Helvetica, sans-serif, cursive;
   font-size: 8rem;
   font-weight: lighter;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+}
+
+.hero .date {
+  margin-top: 60px;
+  margin-bottom: 0px;
 }
 
 .hero span {

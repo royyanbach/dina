@@ -2,7 +2,7 @@
 
 .head {
   height: 100%;
-  background: url('../img/head.jpg') no-repeat bottom center;
+  background: url('../img/head_progressive.jpg') no-repeat bottom center;
   background: url('../img/head.webp') no-repeat bottom center;
   background-size: cover;
   color: rgba(255, 255, 255, .8);

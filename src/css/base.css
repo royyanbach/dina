@@ -253,5 +253,5 @@ p {
 /* UTILITIES */
 
 .relative {
-  position: relative;
+  position: relative !important;
 }

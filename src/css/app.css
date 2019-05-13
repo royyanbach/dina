@@ -2,8 +2,8 @@
 
 .head {
   height: 100%;
-  background: url('../img/head_progressive.jpg') no-repeat bottom center;
-  background: url('../img/head.webp') no-repeat bottom center;
+  background: #0D0e12 url('../img/head_progressive.jpg') no-repeat bottom center;
+  background: #0D0e12 url('../img/head.webp') no-repeat bottom center;
   background-size: cover;
   color: rgba(255, 255, 255, .8);
 }
@@ -46,4 +46,68 @@
   border-color: #fff;
   border-top: 1px solid;
   border-bottom: 1px solid;
+}
+
+.about {
+  height: 100%;
+}
+
+.about > div {
+  height: 50%;
+  color: #fff;
+}
+
+.description-placeholder {
+  height: 100%;
+}
+
+.bride {
+  background: #353535;
+}
+
+.bride .container {
+  background: url('../img/bride.jpg') no-repeat bottom left;
+}
+
+.bride .container::before {
+  content: '';
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right,  rgba(53,53,53,1) 5%,rgba(255,255,255,0) 100%);
+}
+
+.bride .description-placeholder {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  /* background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(53,53,53,1) 20%); */
+  /* box-shadow: 0 19px 38px rgba(53,53,53,0.30), 0 15px 12px rgba(53,53,53,0.22); */
+}
+
+.bride .description-content {
+  border-radius: 4px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px;
+  border: solid 1px #59595b;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+}
+
+.groom {
+  background: #222;
+}
+
+.groom .container {
+  background: url('../img/groom.jpg') no-repeat bottom right;
+}
+
+.about .container {
+  height: 100%;
+  background-size: contain;
 }

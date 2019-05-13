@@ -19,7 +19,7 @@ module.exports = {
     contentBase: './docs',
     host: '0.0.0.0',
     // hot: true,
-    port: 5001
+    port: 5003
   },
   module: {
     rules: [

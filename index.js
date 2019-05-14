@@ -42,4 +42,4 @@ adjustView();
 
 const audio = new Audio('bg.mp3');
 audio.loop = true;
-audio.play();
+audio.autoplay = true;

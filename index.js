@@ -38,6 +38,8 @@ function adjustView() {
 }
 
 window.onresize = adjustView;
-adjustView()
+adjustView();
 
-console.log('hello world!');
+const audio = new Audio('bg.mp3');
+audio.loop = true;
+audio.play();

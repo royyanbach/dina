@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
@@ -65,6 +66,12 @@ module.exports = {
       minify: isProduction,
       hash: isProduction,
     }),
+    new CopyPlugin([
+      {
+        from: path.resolve(__dirname, 'src/audio/'),
+        to: path.resolve(__dirname, 'docs')
+      }
+    ]),
     new MiniCssExtractPlugin({
       filename: isProduction ? '[name].[hash].css' : '[name].css',
     })
